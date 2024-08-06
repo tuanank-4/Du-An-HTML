@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn{
+  width: 100px;
+  padding: 10px 15px;
+  border: 1px solid #333!important;
+}
+
+.btn-white{
+  border: none;
+  border-radius: 5px;
+  background-color: #EEEEEE;
+  padding: 10px 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn-violet{
+  border: none;
+  border-radius: 5px;
+  background-color: violet;
+  padding: 10px 15px;
+  margin-left: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.header_logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.header_logo h2 {
+  padding-left: 20px;
+}
+
+.header_nav_top {
+  position: absolute;
+  left: calc(100% - 83% + 12px);
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header_nav-navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_nav_top-input {
+  position: relative;
+  padding: 15px 25px;
+}
+
+.header_nav_top-input i {
+  position: absolute;
+  top: 20px;
+  left: 55px;
+}
+
+.header_nav_top-input input {
+  border: none;
+  background-color: #ddd;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 40px;
+  margin-left: 20px;
+}
+
+.header_main-input .input_about {
+  border: none;
+  background-color: #ddd;
+  width: 210px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+
+.header_nav_top-input input::placeholder {
+  border: none;
+}
+
+.header_navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+}
+
+.header_nav_top-img {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.header_nav_top-icon {
+  text-align: center;
+  font-size: 20px;
+}
+
+.header_nav_top-icon .fa-bell {
+  padding: 0 20px;
+}
+
+.header_nav_top-note {
+  font-size: 14px;
+}
+
+.header_nav_top-note p {
+  font-weight: 600;
+}
+
+.header_nav_top-note span {
+  font-weight: 300;
+}
+
+.list_item-sub {
+  display: none;
+  margin-left: 20px;
+}
+
+.list_item-sub li a {
+  color: #999999;
+  font-weight: 200;
+}
+
+.list_item:hover > .list_item-sub {
+  display: block;
+}
+
+.header_nav_top-account {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header_nav_top-note {
+  display: inline-block;
+}
+
+.header_nav-footer-content {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.header_nav-footer-content a {
+  text-decoration: underline;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-top: 60px;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar_icon {
+  margin: 0 5px;
+}
+
+.sidebar_icon-right {
+  margin-left: calc(100% - 50%);
+}
+
+.sidebar li {
+  line-height: 25px;
+  padding: 0;
+}
+
+.sidebar li a:hover {
+  background-color: rgb(132 112 255);
+  border-radius: 10px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  background-color: #f1f1f1;
+}
+
+.header_nav-footer {
+  position: absolute;
+  top: 85%;
+  width: 15%;
+}
+
+.main-content {
+  margin-left: 280px;
+  padding: 0px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header .actions {
+  display: flex;
+  align-items: center;
+}
+
+.fa-plus{
+  margin-top: 2px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.actions{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header{
+  color: #333;
+}
